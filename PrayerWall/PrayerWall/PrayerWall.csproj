@@ -1,0 +1,55 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\css\404 page not found.jpg" />
+    <Content Remove="wwwroot\css\404 page.PNG" />
+    <Content Remove="wwwroot\css\Buddest Prayer.PNG" />
+    <Content Remove="wwwroot\css\button-prayerchain.jpg" />
+    <Content Remove="wwwroot\css\button-prayerrequest.jpg" />
+    <Content Remove="wwwroot\css\button-videos.jpg" />
+    <Content Remove="wwwroot\css\candles.PNG" />
+    <Content Remove="wwwroot\css\GirlPraying.png" />
+    <Content Remove="wwwroot\css\Hindu Prayer.PNG" />
+    <Content Remove="wwwroot\css\Jewish Leaders.PNG" />
+    <Content Remove="wwwroot\css\Music Video 1.png" />
+    <Content Remove="wwwroot\css\Music Video 2.png" />
+    <Content Remove="wwwroot\css\Music Video 3.png" />
+    <Content Remove="wwwroot\css\Music Video 4.png" />
+    <Content Remove="wwwroot\css\Muslim Prayer.PNG" />
+    <Content Remove="wwwroot\css\Standing at the wall.png" />
+    <Content Remove="wwwroot\css\The Wall.png" />
+    <Content Remove="wwwroot\css\Video Page.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\js\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\css\404 page not found.jpg" />
+    <None Include="wwwroot\css\404 page.PNG" />
+    <None Include="wwwroot\css\Buddest Prayer.PNG" />
+    <None Include="wwwroot\css\button-prayerchain.jpg" />
+    <None Include="wwwroot\css\button-prayerrequest.jpg" />
+    <None Include="wwwroot\css\button-videos.jpg" />
+    <None Include="wwwroot\css\candles.PNG" />
+    <None Include="wwwroot\css\GirlPraying.png" />
+    <None Include="wwwroot\css\Hindu Prayer.PNG" />
+    <None Include="wwwroot\css\Jewish Leaders.PNG" />
+    <None Include="wwwroot\css\Music Video 1.png" />
+    <None Include="wwwroot\css\Music Video 2.png" />
+    <None Include="wwwroot\css\Music Video 3.png" />
+    <None Include="wwwroot\css\Music Video 4.png" />
+    <None Include="wwwroot\css\Muslim Prayer.PNG" />
+    <None Include="wwwroot\css\Standing at the wall.png" />
+    <None Include="wwwroot\css\The Wall.png" />
+    <None Include="wwwroot\css\Video Page.jpg" />
+    <None Include="wwwroot\css\Video Page.png" />
+    <None Include="wwwroot\css\videopage.png" />
+  </ItemGroup>
+
+</Project>

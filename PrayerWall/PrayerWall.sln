@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrayerWall", "PrayerWall\PrayerWall.csproj", "{067F8072-E9EA-40B7-8CB5-D0014099082B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{067F8072-E9EA-40B7-8CB5-D0014099082B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{067F8072-E9EA-40B7-8CB5-D0014099082B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{067F8072-E9EA-40B7-8CB5-D0014099082B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{067F8072-E9EA-40B7-8CB5-D0014099082B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A366CCE1-F194-4857-8EE5-8B8EC84158F9}
+	EndGlobalSection
+EndGlobal

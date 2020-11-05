@@ -8,34 +8,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-    <body>
-        <div class="w3-container">
 
-            <div class="w3-bar w3-light-grey w3-border">
-                <a href="#" class="w3-bar-item w3-button w3-mobile">Home</a>
-                <a asp-action="prayerrequest">
-                    <a href="#" class="w3-bar-item w3-button w3-mobile">Prayer Request</a>
-                </a>
-                <a href="#" class="w3-bar-item w3-button w3-mobile">Prayer Chain</a>
-                <a href="#" class="w3-bar-item w3-button w3-mobile">Videos</a>
-                <input type="text" class="w3-bar-item w3-input w3-white w3-mobile" placeholder="Search..">
-                <button class="w3-bar-item w3-button w3-green w3-mobile">Go</button>
+    <div class="w3-container">
+
+        <div class="w3-bar w3-light-grey w3-border">
+            <a href="~/Index" class="w3-bar-item w3-button w3-mobile">Home</a>
+            <a asp-action="prayerrequest"> </a>
+            <a href="~/PrayerRequest" class="w3-bar-item w3-button w3-mobile">Prayer Request</a>
+            <a href="~/PrayerChain" class="w3-bar-item w3-button w3-mobile">Prayer Chain</a>
+            <a href="~/VideoRepository" class="w3-bar-item w3-button w3-mobile">Videos</a>
+            <input type="text" class="w3-bar-item w3-input w3-white w3-mobile" placeholder="Search..">
+            <button class="w3-bar-item w3-button w3-green w3-mobile">Go</button>
+            <a asp-action="Index"></a>
 
 
-
-            </div>
-            <h2>VIRTUAL PRAYER WALL</h2>
-
-            <p>We want to pray for you:</p>
         </div>
-    </body>
+        <center><h2>VIRTUAL PRAYER WALL</h2></center>
+
+
+    </div>
+
 
 
 
     <div class="text-center">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     </div>
-    <link rel="stylesheet" href="/css/site.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
 
 </Head>
 
@@ -59,9 +58,11 @@
             <tr>
 
 
-                <th> <img src="button-prayerrequest.jpg" alt="Prayer Request Button"></th>
-                <th> <img src="button-prayerchain.jpg" alt="Prayer Chain Button"></th>
-                <th> <img src="button-videos.jpg" alt="Videos"></th>
+
+                <th><a asp-action="PrayerRequest"><img src="~/css/Images/button-prayerrequest.jpg" alt="Prayer Request Button"> </a></th>
+                <th><a asp-action="PrayerChain"><img src="~/css/Images/button-prayerchain.jpg" alt="Prayer Chain Button"> </a></th>
+                <th><a asp-action="VideoRepository"><img src="~/css/Images/button-videos.jpg" alt="Videos"> </a></th>
+
             </tr>
 
         </table>

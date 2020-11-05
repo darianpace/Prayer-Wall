@@ -1,14 +1,155 @@
 ﻿
 
 
-    <div>
-        <section>
-            <center> <img src="GirlPraying.png" alt="Girl Praying" /></center>
 
-            <center> <b>Virtual Prayer Wall</b></center>
-            <p>
-                Lorem ipsum dolor sit amet, sapien etiam, nunc amet dolor ac odio mauris justo. Luctus arcu, urna praesent at id quisque ac. Arcu es massa vestibulum malesuada, integer vivamus elit eu mauris eus, cum eros quis aliquam wisi. Nulla wisi laoreet suspendisse integer vivamus elit eu mauris hendrerit facilisi, mi mattis pariatur aliquam pharetra eget.
-            </p>
-        </section>
+<!DOCTYPE html>
+
+
+<html>
+<head>
+    <center> <b>Request Form</b></center>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+* {
+  box-sizing: border-box;
+  }
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@*/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+//@media screen and (max-width: 600px) {
+ // .col-25, .col-75, input[type=submit]
+ // {
+//    width: 100%;
+//   margin-top: 0;
+// }*@
+    </style>
+</head>
+<body>
+
+    <h2>Submit Prayer Request</h2>
+    <p>Write your request on the form below. If you want to remain anonymous, you may leave the name section blank.</p>
+
+    <div class="container">
+        @{
+            if (IsPost)
+            {
+                string prayerrequest = Request["PrayerRequest"];
+
+                <p>
+                    Your prayer: <br>
+                    Prayer Request: @prayerrequest <br>
+
+                </p>
+            }
+            else
+            {
+                <form method="post" action="">
+                    <form action="/action_page.php">
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="fname">First Name</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="lname">Last Name</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="country">Country</label>
+                            </div>
+                            <div class="col-75">
+                                <select id="country" name="country">
+                                    <option value="usa">USA</option>
+                                    <option value="mexico">Mexico</option>
+                                    <option value="canada">Canada</option>
+
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="subject">Subject</label>
+                            </div>
+                            <div class="col-75">
+                                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <input type="submit" value="Submit" a asp-action="Index">
+
+                        </div>
+                    </form>
+
+                </form>
+            }
+        }
+
     </div>
-    
+
+</body>
+</html>
+
+
+
+
+

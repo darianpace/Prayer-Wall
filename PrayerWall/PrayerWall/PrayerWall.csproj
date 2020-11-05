@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>015b1c31-b49e-491e-a220-ce8b1cf6b502</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
@@ -30,26 +31,39 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="wwwroot\css\404 page not found.jpg" />
-    <None Include="wwwroot\css\404 page.PNG" />
-    <None Include="wwwroot\css\Buddest Prayer.PNG" />
-    <None Include="wwwroot\css\button-prayerchain.jpg" />
-    <None Include="wwwroot\css\button-prayerrequest.jpg" />
-    <None Include="wwwroot\css\button-videos.jpg" />
-    <None Include="wwwroot\css\candles.PNG" />
-    <None Include="wwwroot\css\GirlPraying.png" />
-    <None Include="wwwroot\css\Hindu Prayer.PNG" />
-    <None Include="wwwroot\css\Jewish Leaders.PNG" />
-    <None Include="wwwroot\css\Music Video 1.png" />
-    <None Include="wwwroot\css\Music Video 2.png" />
-    <None Include="wwwroot\css\Music Video 3.png" />
-    <None Include="wwwroot\css\Music Video 4.png" />
-    <None Include="wwwroot\css\Muslim Prayer.PNG" />
-    <None Include="wwwroot\css\Standing at the wall.png" />
-    <None Include="wwwroot\css\The Wall.png" />
-    <None Include="wwwroot\css\Video Page.jpg" />
-    <None Include="wwwroot\css\Video Page.png" />
-    <None Include="wwwroot\css\videopage.png" />
+    <None Include="wwwroot\css\Images\404 page not found.jpg" />
+    <None Include="wwwroot\css\Images\404 page.PNG" />
+    <None Include="wwwroot\css\Images\Buddest Prayer.PNG" />
+    <None Include="wwwroot\css\Images\button-prayerchain.jpg" />
+    <None Include="wwwroot\css\Images\button-prayerrequest.jpg" />
+    <None Include="wwwroot\css\Images\button-videos.jpg" />
+    <None Include="wwwroot\css\Images\candles.PNG" />
+    <None Include="wwwroot\css\Images\GirlPraying.png" />
+    <None Include="wwwroot\css\Images\Hindu Prayer.PNG" />
+    <None Include="wwwroot\css\Images\Jewish Leaders.PNG" />
+    <None Include="wwwroot\css\Images\Music Video 1.png" />
+    <None Include="wwwroot\css\Images\Music Video 2.png" />
+    <None Include="wwwroot\css\Images\Music Video 3.png" />
+    <None Include="wwwroot\css\Images\Music Video 4.png" />
+    <None Include="wwwroot\css\Images\Muslim Prayer.PNG" />
+    <None Include="wwwroot\css\Images\Standing at the wall.png" />
+    <None Include="wwwroot\css\Images\The Wall.png" />
+    <None Include="wwwroot\css\Images\Video Page.jpg" />
+    <None Include="wwwroot\css\Images\Video Page.png" />
+    <None Include="wwwroot\css\Images\videopage.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.9">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
   </ItemGroup>
 
 </Project>

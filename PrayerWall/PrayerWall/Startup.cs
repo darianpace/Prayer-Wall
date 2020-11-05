@@ -5,9 +5,13 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.EntityFrameworkCore.Storage;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using PrayerWall.Models;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Infrastructure;
 
 namespace PrayerWall
 {
@@ -24,6 +28,19 @@ namespace PrayerWall
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            string connectionString = Configuration["ConnectionStrings:PrayerWallConnection"];
+            services.AddDbContext<PrayerWallDbContext>(opts =>
+            {
+                opts.UseSqlServer(connectionString);
+
+            });
+
+
+        }
+
+        private void MSSQLLocalDB(SqlServerDbContextOptionsBuilder obj)
+        {
+            throw new NotImplementedException();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -51,7 +68,7 @@ namespace PrayerWall
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{action=Index}",
-                    defaults: new {controller="Home"});
+                    defaults: new { controller = "Home" });
 
                 endpoints.MapControllerRoute(
                     name: "default",

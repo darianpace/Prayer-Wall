@@ -1,26 +1,63 @@
 ﻿
-<img src="videopage.png" alt="Viewing the Earth's Splendor" />
-<link to video search bar>
-<div class="row">
-    <div class="col-4">
-        <video width="320" height="240" autoplay>
-            <source src="movie.mp4" type="video/mp4">
-            <source src="movie.ogg" type="video/ogg">
-            <source src="movie.mp4" type="video/mp4">
-    </div>
 
-    <div class="col-4">
-        <source src="movie.ogg" type="video/ogg">
-        <source src="movie.mp4" type="video/mp4">
-        <source src="movie.ogg" type="video/ogg">
-    </div>
-    <div class="col-4">
-        <source src="movie.mp4" type="video/mp4">
-        <source src="movie.ogg" type="video/ogg">
-    </div>
+<center><img src="~/css/Images/Video Page.jpg" alt="Viewing Earth's Splendor" style="width: 500px;height:300px;" /></center>
+<!DOCTYPE html>
 
-    Your browser does not support the video tag.
-    </video>
-</div>
+
+@*<link to video search bar>
+
+
+
+ @model IEnumerable<PrayerWall.Models.PrayerWallDbContext>
+<br />
+<br />
+@using (Html.BeginForm("Index",  "Video", "Prayer Request", FormMethod.Get))
+{
+    @Html.TextBox("Searching")
+    <input type="submit" value="Search" />
+
+}
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Request Id </th>
+            <th>Prayer Subject </th>
+            <th>Video Id </th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model.DefaultIfEmpty) 
+        {
+            <tr>
+                <td colspan="3" style="color:red">
+                    No Match Any Document
+                </td>
+
+            </tr>
+        }
+        else
+        {
+            foreach (var item in Model)
+            {
+                <tr>
+                    <td> @item.PrayerRequest </td>
+                    <td> @item.PrayerSubject </td>
+                    <td> @item.Video </td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>*@
+
+
+
+
+
+
+
+
+
 
 
